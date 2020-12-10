@@ -1,0 +1,220 @@
+.full-container{
+    margin: 0;
+    width: 100%;
+}
+.detail-page {
+    padding: 17px 0;
+}
+.topHeader{
+    width: 100%;
+    height: fit-content;
+    padding: 12px 0 ;
+    background-color: #222;
+}
+.pageLogo{
+    width: 5vw;
+    height: auto;
+    margin: 0 auto;
+}
+.topLogo{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 75vw;
+    height: fit-content;
+    padding: 7px;
+}
+.background-image{
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+.breadCrumbs{
+    position: relative;
+}
+.breadCrbs{
+    width: 100%;
+}
+.dark{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height:50vh;
+    background: rgba(0, 0, 0, .7);
+}
+
+.crumbs{
+    position: absolute;
+    top: 16vh;
+    color: #FFF;
+    z-index: 99;
+    text-align: center;
+    width: 100%;
+}
+
+.ch-title{
+    padding: 12px;
+    font-size: 24pt;
+    font-weight: bold;
+}
+.characterCard{
+    width: 12%;
+    height: 255px;
+    margin: 12px;
+    position: relative;
+    background: #000;
+    border: 1px solid #000;
+    float: left;
+    overflow: hidden;
+    transition: ease-in-out 1s;
+}
+.cards-pic{
+    height: 200px;
+    background-color: #fff;
+    transition: ease-in-out 1s;
+    overflow: hidden;
+    
+}
+.card-ch-name{
+    color: #aaa;
+    padding: 7px;
+    position: absolute;
+    bottom: 0;
+    z-index: 99999;
+}
+.cards-pic:after{
+    height: 4px;
+    content: "";
+    background-color: #e62429;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+}
+
+.characterCard:hover .card-ch-name{
+    color: #FFF;
+}
+.characterCard img{
+    transition: all .2s linear;
+}
+.characterCard:hover img{
+    transform: scale3d(1.05,1.05,1);
+}
+
+.button-dv{
+    width: fit-content;
+    margin: 0 auto;
+}
+.Mar-button{
+    background: #000;
+    color: #FFF;
+    width: fit-content;
+    padding: 12px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.detailPic{
+    width: 100%;
+    height: auto;
+}
+.charPic{
+    display: inline-block;
+}
+.detailCom{
+    width: 100%;
+    display: block;
+    float: left;
+}
+.charName{
+    padding: 7px;
+    display: inline-block;
+    color:#fff ;
+    font-weight: bold;
+}
+.desc{
+    color:#fff ;
+    font-size: 10pt;
+}
+.homeLink{
+    text-decoration: none;
+    color: #e62429;
+    transition: ease-in-out .5s;
+}
+.homeLink:hover{
+    color: #222;
+}
+@media only screen and (min-width: 600px){
+    .charName {
+        padding: 7px 7px 7px 25px;
+        display: inline-block;
+        position: absolute;
+        top: 15vh;
+    }
+    .desc{
+        padding: 7px 7px 7px 25px;
+        display: inline-block;
+        position: absolute;
+        top: 18vh;
+    }
+    .skew{
+        background: #222222;
+        transform: skewY(-0.7deg);
+        padding: 15px;
+        margin-top: -30px;
+        height: 42vh;
+    }
+    .comTitle{
+        margin-top: 50px;
+    }
+    .detailCom{
+        transform: skewY(.7deg);
+    }
+    .detail-page > .skew > .container{
+        transform: skewY(.7deg);
+    }
+    .detailCom > div{
+        float: left;
+        width: 12%;
+        height: auto;
+        margin: 9px;
+        min-height: 360px;
+    }
+    .comList{
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width: 600px){
+    .characterCard{
+        width: 45%;
+        margin: 6px;
+    }
+    .ch-title{
+        font-size: 17pt;
+    }
+    .crumbs{
+        top: 5vh;
+        text-align: center;
+        left: 0;
+    }
+    .pageLogo {
+        width: 25%;
+    }
+    .detail-page {
+        background: #222;
+    }
+    .comTitle{
+        margin-top: 50px;
+    }
+    .skew{
+        height: 110vh;
+    }
+    .detailCom > .comList{
+        width: 40%;
+        margin: 9px;
+    }
+}
